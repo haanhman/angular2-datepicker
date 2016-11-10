@@ -1,11 +1,12 @@
 import {Directive, ElementRef} from '@angular/core';
 
 @Directive({
-  selector: '[sampleDirective]'
+  selector: 'sampleDirective'
 })
 export class SampleDirective {
 
   constructor(private el: ElementRef) {
+    console.log('====> SampleDirective <=======');
   }
 
 }
